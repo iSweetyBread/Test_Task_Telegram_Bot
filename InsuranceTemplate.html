@@ -1,0 +1,49 @@
+<!--\/ html template for car insurance policy \/-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Insurance Contract</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        .contract { max-width: 800px; margin: auto; padding: 20px; }
+        h1 { text-align: center; }
+        .section { margin-bottom: 20px; }
+        .label { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="contract">
+        <h1>Car Insurance Contract</h1>
+
+        <div class="section">
+            <p><span class="label">Insured Person:</span> {{ name }} {{ surname }}</p>
+            <p><span class="label">Date of Birth:</span> {{ date_of_birth }}</p>
+        </div>
+
+        <div class="section">
+            <p><span class="label">Car Make:</span> {{ car_make }}</p>
+            <p><span class="label">Car Model:</span> {{ car_model }}</p>
+            <p><span class="label">Car Year:</span> {{ car_year }}</p>
+            <p><span class="label">Registration Number:</span> {{ car_registration }}</p>
+        </div>
+
+        <div class="section">
+            <p><span class="label">Policy Number:</span> {{ policy_number }}</p>
+            <p><span class="label">Start Date:</span> {{ start_date }}</p>
+            <p><span class="label">End Date:</span> {{ end_date }}</p>
+            <p><span class="label">Premium Amount:</span> {{ premium_amount }}</p>
+        </div>
+
+        <div class="section">
+            <p>This document certifies that the person named above is insured under the policy mentioned for the car specified. Please retain this document for your records.</p>
+        </div>
+
+        <div class="section">
+            <p><span class="label">Date of Issue:</span> {{ issue_date }}</p>
+            <p><span class="label">Authorized Signature:</span> ________________________</p>
+        </div>
+    </div>
+</body>
+</html>

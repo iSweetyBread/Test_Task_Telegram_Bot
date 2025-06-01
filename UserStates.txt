@@ -1,0 +1,4 @@
+State1 -> Start of the chat. User is prompted for images
+State2 -> Bot has received the images. User is prompted to check details
+State3 -> The information is agreed upon. User is prompted to agree to the price
+State4 -> User is given the documents
