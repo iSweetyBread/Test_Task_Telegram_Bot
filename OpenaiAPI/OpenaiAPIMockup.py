@@ -23,7 +23,7 @@ def mock_generate_response(state, message):
 # Mock helper function to evaluate responses, that returns predefined values
 def mock_classify_response(message):
     # Simulated evaluation for user's input with predefined response
-    if(message == "YES"):
+    if(message == "YES" or message == "yes" or message == "Y" or message == "Yes" or message == "y"):
         mock_response = {
             "choices": [
                 {
@@ -35,7 +35,7 @@ def mock_classify_response(message):
             ]
         }
     # Simulated evaluation for user's input with predefined response
-    elif(message == "NO"):
+    elif(message == "NO" or message == "no" or message == "N" or message == "No" or message == "n"):
         mock_response = {
             "choices": [
                 {
