@@ -124,7 +124,7 @@ def handle_image(message):
 
             # Additional placeholder response for clarity in testing
             # To remove in prod
-            bot.reply_to(message.chat.id, placeholder_responses[3])
+            bot.reply_to(message, placeholder_responses[3])
         # If two images were received
         elif len(user_images[user_id]) == 2:
             # Generates and sends an OpenAI response thanking the user
