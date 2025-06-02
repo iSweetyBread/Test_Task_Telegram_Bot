@@ -13,6 +13,7 @@ details. This project integrates with OpenAI, Mindee (OCR), and uses mock servic
 - Supports Telegram media groups and keyboard interactions
 - Fully stateful session management per user
 
+>IMPORTANT NOTE: As of this release, the AI functions are not available. The AI responses are mocked to illustrate the workflow logic.
 ## Setup Instructions
 
 1. Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all required dependencies.
